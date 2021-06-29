@@ -1,15 +1,5 @@
-import redux from 'redux'
+import thunk from 'redux-thunk';
+import logger from './logger';
+import { applyMiddleware } from 'redux';
 
-
-const logger = (store) => (next) => (action) => {
-    console.group(action.type)
-        console.log("The action : ", action);
-        const returnValue = next(action);
-        console.log("The new State : ", store.getState());
-    console.groupEnd();
-
-    return returnValue;
-}
-
-
-export default logger;
+export default applyMiddleware(thunk, logger);
