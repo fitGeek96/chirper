@@ -24,7 +24,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/udacity/reactnd-chirper-app.git"
+    "url": "git+https://github.com/udacity/reactnd-chirper-app.git"
   },
   "browserslist": {
     "production": [
@@ -37,5 +37,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This repo is a code-along with the first project in the [React Nanodegree program](https://www.udacity.com/course/react-nanodegree--nd019).",
+  "bugs": {
+    "url": "https://github.com/udacity/reactnd-chirper-app/issues"
+  },
+  "homepage": "https://github.com/udacity/reactnd-chirper-app#readme",
+  "main": "index.js",
+  "author": "Taxap"
 }
